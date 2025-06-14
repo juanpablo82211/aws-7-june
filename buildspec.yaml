@@ -15,7 +15,7 @@ phases:
       - echo "Running sam build..."
       - sam build
       - echo "Ejecutando pruebas unitarias..."
-      - pytest --maxfail=1 --disable-warnings -q
+      - pytest tests/unit 
 
   build:
     commands:
