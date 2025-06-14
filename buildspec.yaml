@@ -17,15 +17,11 @@ phases:
       - echo "Ejecutando pruebas unitarias..."
       - pytest --maxfail=1 --disable-warnings -q
 
-      build:
-        commands:
-
   build:
     commands:
-      - echo "Running out build commands..."
+      - echo "Running build commands..."
       - sam package --output-template-file packaged.yaml --s3-bucket andres-ocampo-test-bucket
 
 artifacts:
-    files:
+  files:
     - aws-juan/packaged.yaml
-    
