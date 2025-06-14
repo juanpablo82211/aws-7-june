@@ -19,7 +19,7 @@ phases:
       - echo "Running out build commands..."
       - sam package --output-template-file packaged.yaml --s3-bucket andres-ocampo-test-bucket
 
-  artifacts:
+artifacts:
     files:
     - packaged.yaml
     
